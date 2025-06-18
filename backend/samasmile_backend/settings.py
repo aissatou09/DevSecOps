@@ -1,4 +1,5 @@
 from pathlib import Path
+
 import os
 
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -7,6 +8,7 @@ SECRET_KEY = 'django-insecure-your-secret-key'
 DEBUG = True
 #ALLOWED_HOSTS = []
 ALLOWED_HOSTS = ['41.214.51.109', 'localhost', '127.0.0.1']
+
 
 
 INSTALLED_APPS = [
@@ -20,6 +22,7 @@ INSTALLED_APPS = [
     'accounts',
 ]
 
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -28,7 +31,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
     'accounts.middleware.AuditLogMiddleware',
+
 ]
 
 ROOT_URLCONF = 'samasmile_backend.urls'
@@ -51,13 +56,16 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'samasmile_backend.wsgi.application'
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'samasmile_db',
+
         'USER': 'samauser',
         'PASSWORD': 'Passer@123',
         'HOST': 'localhost',
+
         'PORT': '3306',
     }
 }
@@ -80,10 +88,12 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
+
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
         'rest_framework_simplejwt.authentication.JWTAuthentication',
     ),
+
 }
 
 LOGGING = {
@@ -104,3 +114,4 @@ LOGGING = {
         },
     },
 }
+
