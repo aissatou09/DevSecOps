@@ -1,0 +1,63 @@
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Invalid HTTP_HOST header: '41.214.51.109:8000'. You may need to add '41.214.51.109' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/invenio/DevSecOps/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/invenio/DevSecOps/env/lib/python3.8/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/invenio/DevSecOps/env/lib/python3.8/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/invenio/DevSecOps/env/lib/python3.8/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '41.214.51.109:8000'. You may need to add '41.214.51.109' to ALLOWED_HOSTS.
+"GET / HTTP/1.1" 400 65279
+Invalid HTTP_HOST header: '41.214.51.109:8000'. You may need to add '41.214.51.109' to ALLOWED_HOSTS.
+Traceback (most recent call last):
+  File "/home/invenio/DevSecOps/env/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/invenio/DevSecOps/env/lib/python3.8/site-packages/django/utils/deprecation.py", line 133, in __call__
+    response = self.process_request(request)
+  File "/home/invenio/DevSecOps/env/lib/python3.8/site-packages/django/middleware/common.py", line 48, in process_request
+    host = request.get_host()
+  File "/home/invenio/DevSecOps/env/lib/python3.8/site-packages/django/http/request.py", line 150, in get_host
+    raise DisallowedHost(msg)
+django.core.exceptions.DisallowedHost: Invalid HTTP_HOST header: '41.214.51.109:8000'. You may need to add '41.214.51.109' to ALLOWED_HOSTS.
+"GET /favicon.ico HTTP/1.1" 400 65336
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2463
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2514
+Not Found: /
+"GET / HTTP/1.1" 404 2463
+"GET /admin HTTP/1.1" 301 0
+"GET /admin/ HTTP/1.1" 302 0
+"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4256
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+"GET /static/admin/css/login.css HTTP/1.1" 200 958
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18559
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"GET /static/admin/css/base.css HTTP/1.1" 200 21310
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4495
+Watching for file changes with StatReloader
+"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4495
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/css/login.css HTTP/1.1" 304 0
+"GET /static/admin/js/theme.js HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 5250
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /admin/auth/ HTTP/1.1" 200 5263
+Not Found: /
+"GET / HTTP/1.1" 404 2463
