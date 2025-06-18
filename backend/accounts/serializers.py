@@ -1,6 +1,7 @@
 from rest_framework import serializers
 from .models import CustomUser
 from django.contrib.auth.password_validation import validate_password
+#from .models import Appointment
 
 class UserSerializer(serializers.ModelSerializer):
     """
@@ -41,3 +42,13 @@ class RegisterSerializer(serializers.ModelSerializer):
         user.set_password(validated_data['password'])
         user.save()
         return user
+
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CustomUser
+        fields = ['id', 'username', 'role']
+
+#class AppointmentSerializer(serializers.ModelSerializer):
+ #   class Meta:
+  #      model = Appointment
+   #     fields = ['id', 'patient', 'dentist', 'date', 'description']

@@ -1,23 +1,21 @@
 import React from 'react';
+import Navbar from './components/Navbar';
+import AppointmentForm from './AppointmentForm';
 
 export default function Dashboard({ userRole }) {
   return (
-    <div style={{ padding: 20 }}>
-      <h1>Dashboard</h1>
-      {userRole === 'admin' && <p>Bienvenue Admin 👑</p>}
-      {userRole === 'dentist' && <p>Bienvenue Dentiste 🦷</p>}
-      {userRole === 'patient' && <p>Bienvenue Patient 😊</p>}
-      {!userRole && <p>Chargement des infos...</p>}
-
-      <button
-        onClick={() => {
-          localStorage.removeItem('accessToken');
-          localStorage.removeItem('refreshToken');
-          window.location.href = '/login';
-        }}
-      >
-        Déconnexion
-      </button>
+    <div className="min-h-screen bg-gray-100">
+      <Navbar />
+      <main className="p-8 max-w-4xl mx-auto">
+        <h1 className="text-3xl font-semibold mb-4 text-blue-700">Bienvenue sur le tableau de bord</h1>
+        <div className="bg-white p-6 rounded shadow-md">
+          {userRole === 'admin' && <p className="text-lg">Bienvenue Admin 👑</p>}
+          {userRole === 'dentist' && <p className="text-lg">Bienvenue Dentiste 🦷</p>}
+          {userRole === 'patient' && <p className="text-lg">Bienvenue Patient 😊</p>}
+          {userRole === 'patient' && <AppointmentForm />}
+          {!userRole && <p>Chargement des infos...</p>}
+        </div>
+      </main>
     </div>
   );
 }

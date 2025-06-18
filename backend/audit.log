@@ -362,3 +362,168 @@ code 400, message Bad request syntax ('\x04\x01\x00P@é»c\x00')
 " P@é»c " 400 -
 code 400, message Bad request syntax ('\x05\x01\x00')
 " " 400 -
+Watching for file changes with StatReloader
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Unauthorized: /api/accounts/me/
+"GET /api/accounts/me/ HTTP/1.1" 401 5092
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+"GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+"GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+"OPTIONS /api/accounts/me/ HTTP/1.1" 200 0
+"OPTIONS /api/accounts/me/ HTTP/1.1" 200 0
+Unauthorized: /api/accounts/me/
+"GET /api/accounts/me/ HTTP/1.1" 401 183
+Unauthorized: /api/accounts/me/
+"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+"GET /api/accounts/me/ HTTP/1.1" 401 183
+Not Found: /api/token/refresh/
+"POST /api/token/refresh/ HTTP/1.1" 404 2377
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+Not Found: /api/appointment
+"GET /api/appointment HTTP/1.1" 404 2367
+"GET /api/appointments HTTP/1.1" 301 0
+Unauthorized: /api/appointments/
+"GET /api/appointments/ HTTP/1.1" 401 5127
+/home/invenio/DevSecOps/backend/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/invenio/DevSecOps/backend/accounts/urls.py changed, reloading.
+Watching for file changes with StatReloader
+/home/invenio/DevSecOps/backend/accounts/serializers.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 7760
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2929
+"GET /static/admin/css/base.css HTTP/1.1" 200 21310
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2694
+"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+"GET /static/admin/css/responsive.css HTTP/1.1" 200 18559
+"GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+"GET /admin/accounts/customuser/2/change/ HTTP/1.1" 302 0
+"GET /admin/ HTTP/1.1" 200 7962
+"GET /static/admin/img/icon-alert.svg HTTP/1.1" 200 504
+"GET /admin/accounts/customuser/add/ HTTP/1.1" 200 11604
+"GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+"GET /admin/jsi18n/ HTTP/1.1" 200 8621
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 8943
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+"GET /static/admin/js/core.js HTTP/1.1" 200 5682
+"GET /static/admin/js/actions.js HTTP/1.1" 200 7872
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 292458
+"GET /static/admin/css/widgets.css HTTP/1.1" 200 11921
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+"POST /admin/accounts/customuser/add/ HTTP/1.1" 302 0
+"GET /admin/accounts/customuser/4/change/ HTTP/1.1" 200 22558
+"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+"GET /static/admin/js/calendar.js HTTP/1.1" 200 8466
+"GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+"GET /admin/jsi18n/ HTTP/1.1" 200 8621
+"GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15292
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+"GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+"GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+"GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+"GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+"GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+"POST /admin/accounts/customuser/4/change/ HTTP/1.1" 302 0
+"GET /admin/accounts/customuser/ HTTP/1.1" 200 12209
+"GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+"GET /static/admin/css/changelists.css HTTP/1.1" 200 6566
+"GET /admin/jsi18n/ HTTP/1.1" 200 8621
+"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+Unauthorized: /api/accounts/me/
+"GET /api/accounts/me/ HTTP/1.1" 401 183
+Unauthorized: /api/accounts/me/
+"GET /api/accounts/me/ HTTP/1.1" 401 183
+Not Found: /api/token/refresh/
+"POST /api/token/refresh/ HTTP/1.1" 404 2377
+"OPTIONS /api/accounts/token/ HTTP/1.1" 200 0
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /api/accounts/me/ HTTP/1.1" 200 46
+"GET /api/accounts/me/ HTTP/1.1" 200 46
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /admin/accounts/customuser/add/ HTTP/1.1" 200 11604
+"GET /admin/jsi18n/ HTTP/1.1" 200 8621
+"POST /admin/accounts/customuser/add/ HTTP/1.1" 302 0
+"GET /admin/accounts/customuser/5/change/ HTTP/1.1" 200 22558
+"GET /admin/jsi18n/ HTTP/1.1" 200 8621
+"POST /admin/accounts/customuser/5/change/ HTTP/1.1" 302 0
+"GET /admin/accounts/customuser/ HTTP/1.1" 200 12681
+"GET /admin/jsi18n/ HTTP/1.1" 200 8621
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /admin/ HTTP/1.1" 200 8990
+Unauthorized: /api/accounts/me/
+"GET /api/accounts/me/ HTTP/1.1" 401 5092
+"GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+"GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+"GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+"GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+Unauthorized: /api/appointments/
+"GET /api/appointments/ HTTP/1.1" 401 5127
+Unauthorized: /api/appointments/
+"GET /api/appointments/ HTTP/1.1" 401 5127
+Unauthorized: /api/appointments/
+"GET /api/appointments/?format=json HTTP/1.1" 401 58
+Unauthorized: /api/appointments/
+"GET /api/appointments/ HTTP/1.1" 401 5127
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /api/accounts/me/ HTTP/1.1" 200 46
+"GET /api/accounts/me/ HTTP/1.1" 200 46
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /api/accounts/me/ HTTP/1.1" 200 46
+"GET /api/accounts/me/ HTTP/1.1" 200 46
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /api/accounts/me/ HTTP/1.1" 200 46
+"OPTIONS /api/accounts/dentists/ HTTP/1.1" 200 0
+"GET /api/accounts/me/ HTTP/1.1" 200 46
+"OPTIONS /api/accounts/dentists/ HTTP/1.1" 200 0
+"GET /api/accounts/dentists/ HTTP/1.1" 200 48
+"GET /api/accounts/dentists/ HTTP/1.1" 200 48
+"OPTIONS /api/appointments/create/ HTTP/1.1" 200 0
+Bad Request: /api/appointments/create/
+"POST /api/appointments/create/ HTTP/1.1" 400 43
+Bad Request: /api/appointments/create/
+"POST /api/appointments/create/ HTTP/1.1" 400 43
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /api/accounts/me/ HTTP/1.1" 200 47
+"GET /api/accounts/me/ HTTP/1.1" 200 47
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /api/accounts/me/ HTTP/1.1" 200 46
+"GET /api/accounts/me/ HTTP/1.1" 200 46
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /api/accounts/me/ HTTP/1.1" 200 46
+"GET /api/accounts/me/ HTTP/1.1" 200 46
+"GET /api/accounts/dentists/ HTTP/1.1" 200 48
+"GET /api/accounts/dentists/ HTTP/1.1" 200 48

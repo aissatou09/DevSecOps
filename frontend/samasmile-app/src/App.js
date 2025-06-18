@@ -4,14 +4,13 @@ import {
   Routes,
   Route,
   Navigate,
-  useNavigate,
 } from 'react-router-dom';
 import axios from './axiosConfig';
 
 import Login from './Login';
 import Dashboard from './dashboard';
+import Navbar from './components/Navbar';
 
-// Protect route component
 function PrivateRoute({ children }) {
   const token = localStorage.getItem('accessToken');
   return token ? children : <Navigate to="/login" />;
@@ -20,7 +19,6 @@ function PrivateRoute({ children }) {
 export default function App() {
   const [userRole, setUserRole] = useState(null);
 
-  // Fetch user info after login to get role
   useEffect(() => {
     const token = localStorage.getItem('accessToken');
     if (token) {

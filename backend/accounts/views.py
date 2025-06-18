@@ -5,6 +5,8 @@ from .serializers import RegisterSerializer, UserSerializer
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
+#from .models import Appointment
+#from .serializers import AppointmentSerializer
 
 logger = logging.getLogger(__name__)
 
@@ -35,4 +37,12 @@ class UserListView(generics.ListAPIView):
 @permission_classes([IsAuthenticated])
 def current_user(request):
     serializer = UserSerializer(request.user)
+    return Response(serializer.data)
+
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def list_dentists(request):
+    dentists = CustomUser.objects.filter(role='dentist')
+    serializer = UserSerializer(dentists, many=True)
     return Response(serializer.data)
