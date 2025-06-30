@@ -3,6 +3,10 @@ from .views import RegisterView, UserListView, current_user
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 #from .views import AppointmentCreateView, AppointmentListView
 from .views import list_dentists
+from .views import RegisterView
+from rest_framework.routers import DefaultRouter
+from .views import AppointmentViewSet
+
 
 urlpatterns = [
     path('register/', RegisterView.as_view(), name='register'),
@@ -11,7 +15,13 @@ urlpatterns = [
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('dentists/', list_dentists),
+    path('register/', RegisterView.as_view(), name='register'),
+    path('users/', UserListView.as_view(), name='user-list'),
  #   path('', AppointmentListView.as_view()),
 #    path('create/', AppointmentCreateView.as_view()),
 ]
 
+router = DefaultRouter()
+router.register('appointments', AppointmentViewSet)
+
+urlpatterns += router.urls

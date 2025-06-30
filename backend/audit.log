@@ -527,3 +527,367 @@ Bad Request: /api/appointments/create/
 "GET /api/accounts/me/ HTTP/1.1" 200 46
 "GET /api/accounts/dentists/ HTTP/1.1" 200 48
 "GET /api/accounts/dentists/ HTTP/1.1" 200 48
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+Unauthorized: /api/accounts/me/
+"GET /api/accounts/me/ HTTP/1.1" 401 183
+Unauthorized: /api/accounts/me/
+"GET /api/accounts/me/ HTTP/1.1" 401 183
+Not Found: /api/token/refresh/
+"POST /api/token/refresh/ HTTP/1.1" 404 2377
+code 400, message Bad request version ('Ët')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /
+"GET / HTTP/1.1" 404 2304
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2355
+Not Found: /robots.txt
+"GET /robots.txt HTTP/1.1" 404 2352
+Not Found: /sitemap.xml
+"GET /sitemap.xml HTTP/1.1" 404 2355
+Watching for file changes with StatReloader
+Not Found: /
+"GET / HTTP/1.1" 404 2304
+"GET /admin/ HTTP/1.1" 200 8990
+"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+"GET /static/admin/css/base.css HTTP/1.1" 304 0
+"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+"GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+"GET /static/admin/js/theme.js HTTP/1.1" 304 0
+"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+Not Found: /
+"GET / HTTP/1.1" 404 2304
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2355
+"GET /admin/ HTTP/1.1" 200 8990
+"GET /admin/ HTTP/1.1" 200 8990
+"OPTIONS /api/accounts/token/ HTTP/1.1" 200 0
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"OPTIONS /api/accounts/me/ HTTP/1.1" 200 0
+"GET /api/accounts/me/ HTTP/1.1" 200 47
+"OPTIONS /api/accounts/me/ HTTP/1.1" 200 0
+"GET /api/accounts/me/ HTTP/1.1" 200 47
+"GET /api/accounts/me/ HTTP/1.1" 200 47
+"GET /api/accounts/me/ HTTP/1.1" 200 47
+"GET /api/accounts/me/ HTTP/1.1" 200 47
+"GET /api/accounts/me/ HTTP/1.1" 200 47
+"GET /api/accounts/me/ HTTP/1.1" 200 47
+"GET /api/accounts/me/ HTTP/1.1" 200 47
+"GET /api/accounts/me/ HTTP/1.1" 200 47
+"GET /api/accounts/me/ HTTP/1.1" 200 47
+Unauthorized: /api/accounts/token/
+"POST /api/accounts/token/ HTTP/1.1" 401 63
+"GET /admin/accounts/customuser/5/change/ HTTP/1.1" 200 22339
+"GET /admin/jsi18n/ HTTP/1.1" 200 8621
+"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+"GET /static/admin/css/forms.css HTTP/1.1" 304 0
+"GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+"GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+"GET /static/admin/js/core.js HTTP/1.1" 304 0
+"GET /static/admin/js/SelectBox.js HTTP/1.1" 304 0
+"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+"GET /static/admin/js/actions.js HTTP/1.1" 304 0
+"GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+"GET /static/admin/js/SelectFilter2.js HTTP/1.1" 304 0
+"GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+"GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+"GET /static/admin/img/icon-unknown.svg HTTP/1.1" 304 0
+"GET /static/admin/img/search.svg HTTP/1.1" 304 0
+"GET /static/admin/img/selector-icons.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-calendar.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 304 0
+"GET /static/admin/img/icon-clock.svg HTTP/1.1" 304 0
+Watching for file changes with StatReloader
+"GET /admin/ HTTP/1.1" 200 8990
+Not Found: /
+"GET / HTTP/1.1" 404 2304
+Not Found: /register
+"GET /register HTTP/1.1" 404 2346
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+Not Found: /
+"GET / HTTP/1.1" 404 2304
+"GET /api/accounts/me/ HTTP/1.1" 200 81
+"GET /api/accounts/me/ HTTP/1.1" 200 81
+"GET /api/accounts/me/ HTTP/1.1" 200 81
+"GET /api/accounts/me/ HTTP/1.1" 200 81
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+Not Found: /
+"GET / HTTP/1.1" 404 2304
+- Broken pipe from ('199.45.154.150', 56888)
+Not Found: /
+"GET / HTTP/1.1" 404 2304
+code 505, message Invalid HTTP version (2.0)
+"PRI * HTTP/2.0" 505 -
+Not Found: /favicon.ico
+"GET /favicon.ico HTTP/1.1" 404 2355
+code 505, message Invalid HTTP version (2.0)
+"PRI * HTTP/2.0" 505 -
+code 400, message Bad request version ('À\x14À')
+You're accessing the development server over HTTPS, but it only supports HTTP.
+Not Found: /wiki
+"GET /wiki HTTP/1.1" 404 2334
+Unauthorized: /api/accounts/me/
+"GET /api/accounts/me/ HTTP/1.1" 401 183
+Unauthorized: /api/accounts/me/
+"GET /api/accounts/me/ HTTP/1.1" 401 183
+"OPTIONS /api/token/refresh/ HTTP/1.1" 200 0
+Not Found: /api/token/refresh/
+"POST /api/token/refresh/ HTTP/1.1" 404 2377
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /api/accounts/me/ HTTP/1.1" 200 81
+"GET /api/accounts/me/ HTTP/1.1" 200 81
+"GET /admin/ HTTP/1.1" 200 8990
+"GET /admin/accounts/customuser/4/change/ HTTP/1.1" 200 22342
+"GET /admin/jsi18n/ HTTP/1.1" 200 8621
+"GET /admin/accounts/customuser/4/password/ HTTP/1.1" 200 7723
+"POST /admin/accounts/customuser/4/password/ HTTP/1.1" 302 0
+"GET /admin/accounts/customuser/4/change/ HTTP/1.1" 200 22482
+"GET /admin/jsi18n/ HTTP/1.1" 200 8621
+"GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+"POST /admin/accounts/customuser/4/change/ HTTP/1.1" 302 0
+"GET /admin/accounts/customuser/ HTTP/1.1" 200 12681
+"GET /admin/jsi18n/ HTTP/1.1" 200 8621
+"GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+"GET /static/admin/img/icon-no.svg HTTP/1.1" 304 0
+"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+"GET /static/admin/js/filters.js HTTP/1.1" 304 0
+"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /api/accounts/me/ HTTP/1.1" 200 77
+"GET /api/accounts/me/ HTTP/1.1" 200 77
+"GET /admin/accounts/customuser/5/change/ HTTP/1.1" 200 22339
+"GET /admin/jsi18n/ HTTP/1.1" 200 8621
+"GET /admin/accounts/customuser/5/password/ HTTP/1.1" 200 7723
+"POST /admin/accounts/customuser/5/password/ HTTP/1.1" 302 0
+"GET /admin/accounts/customuser/5/change/ HTTP/1.1" 200 22479
+"GET /admin/jsi18n/ HTTP/1.1" 200 8621
+"POST /admin/accounts/customuser/5/change/ HTTP/1.1" 302 0
+"GET /admin/accounts/customuser/ HTTP/1.1" 200 12681
+"GET /admin/jsi18n/ HTTP/1.1" 200 8621
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /api/accounts/me/ HTTP/1.1" 200 80
+"GET /api/accounts/me/ HTTP/1.1" 200 80
+/home/invenio/DevSecOps/backend/accounts/views.py changed, reloading.
+Watching for file changes with StatReloader
+/home/invenio/DevSecOps/backend/accounts/urls.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Unauthorized: /api/accounts/me/
+"GET /api/accounts/me/ HTTP/1.1" 401 183
+Unauthorized: /api/accounts/me/
+"GET /api/accounts/me/ HTTP/1.1" 401 183
+Not Found: /api/token/refresh/
+"POST /api/token/refresh/ HTTP/1.1" 404 2377
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /api/accounts/me/ HTTP/1.1" 200 80
+"GET /api/accounts/me/ HTTP/1.1" 200 80
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /api/accounts/me/ HTTP/1.1" 200 81
+"GET /api/accounts/me/ HTTP/1.1" 200 81
+"GET /api/accounts/me/ HTTP/1.1" 200 81
+"GET /api/accounts/me/ HTTP/1.1" 200 81
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /api/accounts/me/ HTTP/1.1" 200 77
+"GET /api/accounts/me/ HTTP/1.1" 200 77
+"GET /api/accounts/me/ HTTP/1.1" 200 77
+"GET /api/accounts/me/ HTTP/1.1" 200 77
+Watching for file changes with StatReloader
+"OPTIONS /api/accounts/me/ HTTP/1.1" 200 0
+"OPTIONS /api/accounts/me/ HTTP/1.1" 200 0
+Unauthorized: /api/accounts/me/
+"GET /api/accounts/me/ HTTP/1.1" 401 183
+Unauthorized: /api/accounts/me/
+"GET /api/accounts/me/ HTTP/1.1" 401 183
+Not Found: /api/token/refresh/
+"POST /api/token/refresh/ HTTP/1.1" 404 2377
+"OPTIONS /api/accounts/token/ HTTP/1.1" 200 0
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /api/accounts/me/ HTTP/1.1" 200 77
+"GET /api/accounts/me/ HTTP/1.1" 200 77
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /api/accounts/me/ HTTP/1.1" 200 81
+"GET /api/accounts/me/ HTTP/1.1" 200 81
+"GET /api/accounts/me/ HTTP/1.1" 200 81
+"GET /api/accounts/me/ HTTP/1.1" 200 81
+Watching for file changes with StatReloader
+Unauthorized: /api/accounts/me/
+"GET /api/accounts/me/ HTTP/1.1" 401 183
+Unauthorized: /api/accounts/me/
+"GET /api/accounts/me/ HTTP/1.1" 401 183
+Not Found: /api/token/refresh/
+"POST /api/token/refresh/ HTTP/1.1" 404 2377
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /api/accounts/me/ HTTP/1.1" 200 80
+"OPTIONS /api/accounts/users/?role=patient HTTP/1.1" 200 0
+"OPTIONS /api/accounts/appointments/ HTTP/1.1" 200 0
+"GET /api/accounts/me/ HTTP/1.1" 200 80
+"OPTIONS /api/accounts/users/?role=dentist HTTP/1.1" 200 0
+"OPTIONS /api/accounts/appointments/ HTTP/1.1" 200 0
+"OPTIONS /api/accounts/users/?role=patient HTTP/1.1" 200 0
+"OPTIONS /api/accounts/users/?role=dentist HTTP/1.1" 200 0
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/appointments/ HTTP/1.1" 200 2
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/appointments/ HTTP/1.1" 200 2
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /api/accounts/me/ HTTP/1.1" 200 77
+"GET /api/accounts/appointments/ HTTP/1.1" 200 2
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/me/ HTTP/1.1" 200 77
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/appointments/ HTTP/1.1" 200 2
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /api/accounts/me/ HTTP/1.1" 200 81
+"GET /api/accounts/me/ HTTP/1.1" 200 81
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/appointments/ HTTP/1.1" 200 2
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/appointments/ HTTP/1.1" 200 2
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"POST /api/accounts/appointments/ HTTP/1.1" 201 79
+"GET /api/accounts/me/ HTTP/1.1" 200 81
+"GET /api/accounts/me/ HTTP/1.1" 200 81
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /api/accounts/me/ HTTP/1.1" 200 81
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/me/ HTTP/1.1" 200 81
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /api/accounts/me/ HTTP/1.1" 200 77
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/me/ HTTP/1.1" 200 77
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /api/accounts/me/ HTTP/1.1" 200 80
+"GET /api/accounts/me/ HTTP/1.1" 200 80
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+Watching for file changes with StatReloader
+Unauthorized: /api/accounts/me/
+"GET /api/accounts/me/ HTTP/1.1" 401 183
+Unauthorized: /api/accounts/me/
+"GET /api/accounts/me/ HTTP/1.1" 401 183
+Not Found: /api/token/refresh/
+"POST /api/token/refresh/ HTTP/1.1" 404 2377
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /api/accounts/me/ HTTP/1.1" 200 80
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"GET /api/accounts/me/ HTTP/1.1" 200 80
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /api/accounts/me/ HTTP/1.1" 200 81
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"GET /api/accounts/me/ HTTP/1.1" 200 81
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/me/ HTTP/1.1" 200 81
+"GET /api/accounts/me/ HTTP/1.1" 200 81
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /api/accounts/me/ HTTP/1.1" 200 77
+"GET /api/accounts/me/ HTTP/1.1" 200 77
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"POST /api/accounts/token/ HTTP/1.1" 200 483
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/users/?role=patient HTTP/1.1" 200 82
+"GET /api/accounts/users/?role=dentist HTTP/1.1" 200 79
+"GET /api/accounts/appointments/ HTTP/1.1" 200 81
+Bad Request: /api/accounts/token/
+"POST /api/accounts/token/ HTTP/1.1" 400 89

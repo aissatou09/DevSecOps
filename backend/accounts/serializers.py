@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from .models import CustomUser
 from django.contrib.auth.password_validation import validate_password
-#from .models import Appointment
+from .models import Appointment
 
 class UserSerializer(serializers.ModelSerializer):
     """
@@ -52,3 +52,14 @@ class UserSerializer(serializers.ModelSerializer):
  #   class Meta:
   #      model = Appointment
    #     fields = ['id', 'patient', 'dentist', 'date', 'description']
+class UserSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CustomUser
+        fields = ['id', 'username', 'email', 'role', 'password']
+        extra_kwargs = {
+            'password': {'write_only': True}
+        }
+class AppointmentSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Appointment
+        fields = ['id', 'patient', 'dentist', 'date', 'motif']
