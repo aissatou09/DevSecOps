@@ -1,19 +1,16 @@
-// src/App.js
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate
+  Navigate,
 } from 'react-router-dom';
-
 import axios from './axiosConfig';
+
 import Login from './Login';
-import Register from './Register';
 import Dashboard from './dashboard';
-import PlanningPage from './PlanningPage';
-import DossierPage from './DossierPage';
-import MessagesPage from './MessagesPage';
+import Navbar from './components/Navbar';
+import Register from './Register';
 
 function PrivateRoute({ children }) {
   const token = localStorage.getItem('accessToken');
@@ -26,7 +23,10 @@ export default function App() {
   useEffect(() => {
     const token = localStorage.getItem('accessToken');
     if (token) {
-      axios.get('/api/accounts/me/')
+      axios
+        .get('/api/accounts/me/', {
+          headers: { Authorization: `Bearer ${token}` },
+        })
         .then((res) => setUserRole(res.data.role))
         .catch(() => {
           localStorage.removeItem('accessToken');
@@ -39,22 +39,22 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/login" element={<Login setUserRole={setUserRole} />} />
-        <Route path="/register" element={<Register />} />
-
-        <Route path="/dashboard" element={
-          <PrivateRoute>
-            <Dashboard userRole={userRole} />
-          </PrivateRoute>
-        } />
-
-        {/* Pages secondaires */}
-        <Route path="/planning" element={<PrivateRoute><PlanningPage /></PrivateRoute>} />
-        <Route path="/dossier" element={<PrivateRoute><DossierPage /></PrivateRoute>} />
-        <Route path="/messages" element={<PrivateRoute><MessagesPage /></PrivateRoute>} />
-
-        {/* Redirection par défaut */}
+        <Route
+          path="/dashboard"
+          element={
+            <PrivateRoute>
+              <Dashboard userRole={userRole} />
+            </PrivateRoute>
+          }
+        />
         <Route path="*" element={<Navigate to="/login" />} />
       </Routes>
     </Router>
   );
 }
+//import Register from './Register';
+
+<Routes>
+  <Route path="/register" element={<Register />} />
+  {/* autres routes */}
+</Routes>

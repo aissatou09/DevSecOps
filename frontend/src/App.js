@@ -28,4 +28,12 @@ function App() {
   );
 }
 
+
+import Register from './Register';
+
+<Routes>
+  <Route path="/register" element={<Register />} />
+  {/* autres routes */}
+</Routes>
+
 export default App;

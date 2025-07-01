@@ -1,0 +1,92 @@
+import React from 'react';
+import Navbar from './components/Navbar';
+import AppointmentForm from './AppointmentForm';
+import Planning from './Planning';
+
+//export default function Dashboard({ userRole }) {
+  //return (
+    //<div className="min-h-screen bg-gray-100">
+      //<Navbar />
+      //<main className="p-8 max-w-4xl mx-auto">
+        //<h1 className="text-3xl font-semibold mb-4 text-blue-700">Bienvenue sur le tableau de bord</h1>
+        //<div className="bg-white p-6 rounded shadow-md">
+          //{userRole === 'admin' && <p className="text-lg">Bienvenue Admin 👑</p>}
+          //{userRole === 'dentist' && <p className="text-lg">Bienvenue Dentiste 🦷</p>}
+         // {userRole === 'patient' && <p className="text-lg">Bienvenue Patient 😊</p>}
+          //{userRole === 'patient' && <AppointmentForm />}
+          //{!userRole && <p>Chargement des infos...</p>}
+        //</div>
+      //</main>
+    //</div>
+  //);
+//}
+// src/Dashboard.js
+//import React from 'react';
+
+//function Dashboard({ userRole }) {
+  //return (
+    //<div className="p-6">
+      //<h1 className="text-2xl font-bold mb-4">Dashboard</h1>
+export default function Dashboard({ userRole }) {
+  return (
+   <div className="min-h-screen bg-gray-100">
+    <Navbar />
+    <main className="p-8 max-w-4xl mx-auto">
+     <h1 className="text-3xl font-semibold mb-4 text-blue-700">Bienvenue sur le tableau de bord</h1>
+     <div className="bg-white p-6 rounded shadow-md">
+      {(userRole === 'assistant' || userRole === 'dentist' || userRole === 'patient') && (
+       <div className="mt-8">
+          <Planning userRole={userRole} />
+       </div>
+      )}
+
+      {!userRole && <p>Chargement du rôle...</p>}
+
+      {userRole === 'admin' && (
+        <div>
+          <p>👑 Bienvenue Admin</p>
+          <ul>
+            <li>➡️ Gérer les utilisateurs</li>
+            <li>📜 Consulter le journal d’audit</li>
+          </ul>
+        </div>
+      )}
+
+      {userRole === 'dentist' && (
+        <div>
+          <p>🦷 Bonjour Docteur</p>
+          <ul>
+            <li>📁 Voir / modifier les dossiers patients</li>
+            <li>✉️ Messagerie sécurisée</li>
+            <li>🖊️ Signer des prescriptions</li>
+          </ul>
+        </div>
+      )}
+
+      {userRole === 'assistant' && (
+        <div>
+          <p>📋 Bonjour Assistant</p>
+          <ul>
+            <li>🗓️ Gérer le planning des RDV</li>
+            <li>🔔 Voir les notifications</li>
+          </ul>
+        </div>
+      )}
+
+      {userRole === 'patient' && (
+        <div>
+          <p>👤 Bonjour Patient</p>
+          <ul>
+            <li>📅 Mes rendez-vous</li>
+            <li>🩺 Mon dossier médical</li>
+            <li>✉️ Contacter mon dentiste</li>
+          </ul>
+        </div>
+      )}
+     </div>
+    </main>
+   </div>
+  );
+}
+
+//export default Dashboard;
